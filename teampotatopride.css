@@ -1,1 +1,149 @@
-.theme-dark .markup-2BOw-j {color: orange;}
+
+
+:root {
+    --light: hsla(30, 96%, 52%, 0.2);   /*rgba(0, 0, 0, .1); 		/* Overall brightness. 1= black, 0 = transparent */
+    --userlight:rgba(0, 0, 0, .3);		/* Brightness for the userpopouts */
+	--mc: hsla(30, 96%, 52%, 0.6);      /* hsla(202, 76%, 35%, 0.7);		/* Main colour. Larger items, backgrounds. */
+	--sc: hsla(30, 96%, 52%, 0.7);      /* hsla(202, 76%, 35%, 0.8);		 Accent/Secondary colour. Borders, notifications & such.  */
+	--font: gadget ;            /*  sans-serif;	 */
+	--font-size: .95rem;
+	--text:  #eee; /* Chat text colour. */
+}
+#app-mount {background: url('http://orig11.deviantart.net/873c/f/2016/059/8/b/the_division___shd_no_dots_1080p_by_wes2299-d9tiokc.jpg') center/cover no-repeat} /* Background */
+
+/*  Your META and root should be in your MyTheme.theme.css To give to other people. ^^^^
+
+Everything below goes in to a new file, MyTheme.css for import */
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {border-radius:1px!important;border-color: transparent !important;background: var(--sc) !important;} 
+::-webkit-scrollbar, ::-webkit-scrollbar-track-piece {width:8px !important;border-color: transparent !important; background: transparent !important;} 
+::-webkit-scrollbar-corner {display: none !important}
+::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0)!important}
+
+/* Main background/TitleBar etc */
+.theme-dark .container-2lgZY8,.theme-dark .standardSidebarView-3F1I7i,.titleBar-AC4pGV::after {background-color: var(--light)} /* Brightness */
+.titleBar-AC4pGV::after {content:""; position:absolute; z-index:-1; top:0; left:0; right:0; width:100%; height:22px} /* Titlebar layer */
+
+/* Main Transparency */
+.theme-dark .chat-3bRxxu,.theme-dark .wrapper-1Rf91z,.theme-dark .layer-3QrUeG,.theme-dark .wrapper-29NfPK,
+.theme-dark .chat-3bRxxu>.content-yTz4x3, .theme-dark .chat-3bRxxu form, .flex-horizontal>.flex-spacer, 
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D, .theme-dark #friends, .video-1FfuMD, .theme-dark .private-channel-call,
+.theme-dark .activityFeed-1C0EmJ, .theme-dark .footer-2yfCgX, .theme-dark .headerBar-UHpsPw, 
+.theme-dark .channels-Ie2l6A, .theme-dark .container-PNkimc, .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN, 
+.theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy, .theme-dark .layers-3iHuyZ, .theme-dark .wrapper-1Rf91z .scroller-2TZvBN, 
+.theme-dark .chat-3bRxxu .content-yTz4x3, .theme-dark .members-1998pB, .theme-dark .title-3qD0b-, .theme-dark .scroller-2v3d_F, 
+.theme-dark .header-2o-2hj, .theme-dark .container-2Thooq,.theme-dark .messagesWrapper-3lZDfY,.theme-dark .gameLibrary-TTDw4Y  {background: transparent !important;background-color: transparent !important}
+
+.markup-2BOw-j:not(code) {font-size: var(--font-size)!important;}  /* Changes font size of user text, not including code. */
+.theme-dark .containerCozy-jafyvG .markup-2BOw-j {color: var(--text)} /* Text colour */
+
+.theme-dark .iconBadge-2dji3k {border-color: #fff}
+.theme-dark .iconBadge-2dji3k:hover {border-color: #eee}
+
+.wordmark-2iDDfm svg > path {fill:#fff}
+.winButtonClose-1HsbF- > svg > polygon  {fill:#fff}
+.winButtonMinMax-PBQ2gm > svg > rect {stroke:#fff}
+.winButton-iRh8-Z {opacity: 1}
+.theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {color: #fff}
+.theme-dark .title-3qD0b- {box-shadow:0 0 0 transparent}
+.theme-dark .backdrop-1wrmKB {opacity: .3 !important}
+
+input{background: #f6f6f6}
+body,span:not(.spinner-item){-webkit-font-smoothing:optimizeLegibility !important;-webkit-backface-visibility:hidden;}
+::placeholder,body,button,input,select,textarea:not([class*="hljs"]):not(code) {color: #fff;font-family:var(--font);text-rendering: optimizeLegibility !important}
+.theme-dark ::selection {background: rgba(0, 0, 0, 0.7);color:rgb(255, 255, 0)}
+.theme-dark ::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.8) !important}
+
+/* Chat Area */
+.theme-dark .topic-2QX7LI {color:#fff}
+.username-_4ZSMR, .usernameWrapper-1S-G5O .username-_4ZSMR {font-weight: 600;text-shadow:0 0 3px rgb(0, 0, 0);border-radius:10%}/* User Name */
+.theme-dark .timestampCozy-2hLAPV {color: #fff}
+.theme-dark .autocomplete-1vrmpx {background-color: rgba(0, 0, 0, 0.9)}
+.theme-dark .inner-zqa7da {background-color: hsla(0, 0%, 0%, 0.6);box-shadow: 0 0 3px 1px var(--sc) } /* Chat box */
+#app-mount .typing-2GQL18 {background: transparent}
+.theme-dark .markup-2BOw-j pre {background: rgba(0, 0, 0, 0.4);border-color: var(--sc)}
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {background: rgba(0, 0, 0, 0.7)}
+.theme-dark .markup-2BOw-j a {color: #0096cf;background:rgba(0, 0, 0, 0.3)}
+.theme-dark .dividerEnabled-2TTlcf {display:none}
+.theme-dark .channelTextArea-rNsIhG {border-top:none}
+
+/* Activity */
+.theme-dark .splashArt-1anaP9 {opacity:1;filter:none}
+.theme-dark .card-7JP0BX {background-color: rgba(0, 0, 0, 0.8);color: #fff;}
+.theme-dark .splashArt-3yFzRe {width: 100%;filter: grayscale(0%);opacity: 1;-webkit-mask: radial-gradient(100% 100% at top left,hsla(0,0%,100%,.3) 0,hsla(0,0%,100%,.4) 100%)}
+
+/* Library */
+.theme-dark .rowBackground-3MeNoN {filter:none;-webkit-mask:none;opacity:.7}
+/* Store */
+.gameTitle-1GKhmx {text-align:center}
+.scroller-2FKFPG::-webkit-scrollbar-track {display:none}
+#app-mount .premium-39U29H {background-image: linear-gradient(90deg,rgba(0, 0, 0, .6),rgba(179, 174, 255, .3))}
+#app-mount .mediaFade-2DGFbT {background: linear-gradient(180deg,transparent 90%,rgba(0, 0, 0, 0.3))}
+.theme-dark .mediaDescription-3VIUb6 {background: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.5) 45%,rgba(0, 0, 0, 0.7))}
+.theme-dark .tileMedia-24cT6_ {background-color: rgba(0, 0, 0, 0.4)}
+#app-mount .installSize-1eXbBX {background-color: rgb(31, 31, 31);color: #009aff}
+.description-3z5Lb3 .lookFilled-1Gx00P.colorPrimary-3b3xI6 {background-color: rgba(0, 0, 0, .5);color: #fff}
+#app-mount .applicationStore-1pNvnv, #app-mount .itemBackground-1jfD8p  {background-color: rgba(18, 18, 18, 0)}
+.applicationStore-1pNvnv .tile-2H4MQG {background-color: rgba(0, 0, 0, 0.7)}
+#app-mount .tile-2H4MQG:hover, #app-mount .purchaseUnit-3FZmmF {background-color: rgba(0, 0, 0, 0.7)}
+#app-mount .itemBackground-1jfD8p:before {background: radial-gradient(ellipse at top,transparent,rgba(0, 0, 0, 0.6)),linear-gradient(90deg,rgba(0, 0, 0, 0.6) 0,transparent 40%,transparent 60%,rgba(0, 0, 0, 0.6)),linear-gradient(0deg,rgba(0, 0, 0, 0.6) 0,transparent 25%)}
+.theme-dark .bubble-1gL_TN {background-color: rgba(0, 0, 0, 0.9)}
+
+/* Members Area */
+.theme-dark .membersGroup-v9BXpm {color: #fff;text-align:center}
+.theme-dark .activity-1IYsbk {color: #babcbf}
+.theme-dark .member-3W1lQa.popout-open .content-OzHfo4,.theme-dark .member-3W1lQa:hover .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {background:var(--mc)}
+/* User Popout */
+.userPopout-3XzG_A {background: url(https://media3.giphy.com/media/p9zMKu50oUZgI/giphy.gif) center/cover no-repeat}
+.userPopout-3XzG_A .activity-11LB_k {background-color: rgba(0,0,0,.0)}
+.userPopout-3XzG_A .header-2BwW8b,.userPopout-3XzG_A .body-3iLsc4,.userPopout-3XzG_A .footer-1fjuF6,
+.userPopout-3XzG_A .quickMessage-1yeL4E,.userPopout-3XzG_A .note-3kmerW textarea:focus {background: var(--userlight)!important}
+.userPopout-3XzG_A .tip-2ab612,.userPopout-3XzG_A .bodyTitle-Y0qMQz {color: #fff}
+
+/* Guilds */
+.theme-dark .guildSeparator-3s64Iy:after{display:none}
+.theme-dark .friendsOnline-2JkivW{color:#fff}
+.theme-dark .container-2td-dC.unread-2OHH1w:before {background: var(--sc)}
+
+/* Channels */
+.channelNotices-41mJbj .channelNotice-1-XFjC.invite-OjTXrW {background: none}
+.channelNotices-41mJbj .channelNotice-1-XFjC {padding: 20px 10px 10px;box-shadow:none}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {background-color: rgba(0, 0, 0, 0.4);border: none;padding: 2px 0}
+.header-2o-2hj {box-shadow:none}
+.privateChannels-1nO12o .channel-2QD9_O .name-2WpE7M {opacity:1}
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: #fff} 
+.container-1UB9sr {background: rgba(0, 0, 0, 0);border-bottom:none;padding: 1px}
+.nameDefault-2s3kbY {color: #fff}
+.contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .private-channels .channel:hover a,.theme-dark #friends .friends-table .friends-row:hover,
+.contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active,.privateChannels-1nO12o .channel-2QD9_O:hover a,
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM,.privateChannels-1nO12o .channel-2QD9_O.selected-1HYmZZ a{background-color: var(--mc)}
+.unread-1Dp-OI {background: var(--sc)}
+
+/* Menus */
+.theme-dark .search-results-wrap .search-header {background-color: rgba(0, 0, 0, 0)}
+.theme-dark .searchPopout-1vUlP3 {background-color: rgba(0, 0, 0, 0.9)}
+.theme-dark .search-results-wrap {background-color: rgba(0, 0, 0, 0.4)}
+.theme-dark .search-results-wrap .search-result .search-result-message.hit {border: 2px solid var(--sc)}
+.theme-dark .search-results-wrap .search-result .hit {background-color: rgba(0, 0, 0, 0.7);box-shadow: 0 0 10px 0px var(--sc)}
+.theme-dark .search-results-wrap .search-result:before,.theme-dark .search-results-wrap .search-result:after {display:none}
+
+.menu-Sp6bN1:not(.alt-3btY0e) {background:rgba(0, 0, 0, 0.93)}
+.menu-Sp6bN1.alt-3btY0e{background:rgba(0, 0, 0, 0.9)}
+.theme-dark .item-1GzJrl {color: #fff}
+
+.theme-dark .header-ykumBX {background:rgba(0, 0, 0, 0.0)}
+.theme-dark .messagesPopoutWrap-1MQ1bW {background:rgba(0, 0, 0, 0.8)}
+.theme-dark .messageGroupWrapper-o-Zw7G {background-color: rgba(45, 45, 45, 0.9);border-color: var(--sc)}
+
+.theme-dark  .uploadModal-2ifh8j {background: rgba(0, 0, 0, 0.85)}
+
+.theme-dark #memberCount {background: rgba(0, 0, 0, 0);padding:0;height:20px}
+
+#bd-settingspane-container .contentColumnDefault-1VQkGM .bda-slist::before {content: "Changelog: v1.6 Last update before v2 and ending support. Added Fixes import, update old classes, cleaner chat window, linked more vars. "}
+#bd-settingspane-container .bda-slist::before {
+    background: rgba(67, 181, 129, 0.8);display: block;
+    padding: 5px 10px;margin-bottom: 10px;border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;margin-top: 2px;color: #fff}
