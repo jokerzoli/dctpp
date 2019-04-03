@@ -141,7 +141,7 @@ body,span:not(.spinner-item){-webkit-font-smoothing:optimizeLegibility !importan
 
 .theme-dark #memberCount {background: rgba(0, 0, 0, 0);padding:0;height:20px}
 
-#bd-settingspane-container .contentColumnDefault-1VQkGM .bda-slist::before {content: "Changelog: v1.6 Last update before v2 and ending support. Added Fixes import, update old classes, cleaner chat window, linked more vars. "}
+#bd-settingspane-container .contentColumnDefault-1VQkGM .bda-slist::before {content: "Changelog: v1.0 "}
 #bd-settingspane-container .bda-slist::before {
     background: rgba(67, 181, 129, 0.8);display: block;
     padding: 5px 10px;margin-bottom: 10px;border-radius: 4px;
