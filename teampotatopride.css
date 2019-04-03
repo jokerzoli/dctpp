@@ -1,7 +1,7 @@
 
 
 :root {
-	--light: hsla(30, 96%, 52%, 0.2);   /*rgba(0, 0, 0, .1); 		/* Overall brightness. 1= black, 0 = transparent */
+	--light:rgba(0, 0, 0, .1);  	    /*hsla(30, 96%, 52%, 0.2);		/* Overall brightness. 1= black, 0 = transparent */
 	--userlight:rgba(0, 0, 0, .3);	    /* Brightness for the userpopouts */
 	--mc: hsla(30, 96%, 52%, 0.6);      /* hsla(202, 76%, 35%, 0.7);		/* Main colour. Larger items, backgrounds. */
 	--sc: hsla(30, 96%, 52%, 0.7);      /* hsla(202, 76%, 35%, 0.8);		 Accent/Secondary colour. Borders, notifications & such.  */
